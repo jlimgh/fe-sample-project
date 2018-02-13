@@ -131,16 +131,15 @@ html, body {
     position:absolute;
     top:0px;
     right:0px;
-    /*transition:ease 0.25s all;*/
     -webkit-transform:translate(50%, -50%);
     transform:translate(50%, -50%);
     border-radius:1000px;
-    background:rgba(0,0,0,0.8);
+    background:rgba(0,0,0,0.1);
     font-family:Arial, Sans-Serif;
     font-size:20px;
     text-align:center;
     line-height:100%;
-    color:#fff;
+    color: blue;
 }
 
 .blur {
@@ -315,10 +314,11 @@ i.fa.fa-times-circle {
       box-shadow: none;
       background: none;
       width: 80%;
-      top: 56%;
+      top: 61%;
   }
   .popup .popup-close {
-      right: 60px;
+      right: 36px;
+      background: none;
   }
 
 }
