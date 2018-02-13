@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample checkout</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel-"stylesheet" href='https://fonts.googleapis.com/css?family=Lato'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar site-nav topnav" id="myTopnav">
+      <a href="#home" class="nav-item products active"><i class="fas fa-shopping-cart"></i></span>Cart.ly</a>
+      <a href="#products" class="nav-item products">Products</a>
+      <a href="#cart" data-popup-open="popup-1" class="nav-item checkout">Your Cart<span class="cart-item-qty">0</span></a>
+      <a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a>
+    </nav>
+
+    <div class="container">
+    	<h1>Shop our featured collection</h1>
+    	<div id="product-list">
+    		<div class="p-info template" data-id="">
+    			<img class="p-image" src="">
+    			<div class="p-title"></div>
+    			<div class="p-price">$<span class="p-number"></span></div>
+    			<button class="p-btn-add" type="button">Add to cart</button>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="popup" data-popup="popup-1">
+    	<div class="popup-inner">
+    		<h3 class="cart-headline">Your Cart<span class="cart-item-qty">0</span></h3>
+    		<table class="product-cart-list">
+    			<tbody>
+          		<p class="cart-empty-msg" id="cart-empty-msg">
+                <span>Nothing in your cart,</span>
+                <span>start shopping</span>
+              </p>
+    					<tr class="cart-product-wrap template-cart">
+    						<td class="cart-image-wrapper">
+    							<img class="cart-image" src="">
+    						</td>
+    						<td class="cart-description-wrapper">
+    							<div class="cart-title"></div>
+    							<span class="dollar">$</span><div class="cart-price"></div>
+    						</td>
+    						<td class="cart-remove-wrapper">
+    							<div id="remove-item">
+    								<span class="cart-item-remove"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+    							</div>
+    						</td>
+    					</tr>
+    					<tr class="spacer"></tr>
+    			</tbody>
+    		</table>
+    		<div class="cart-divider"></div>
+    		<div class="cart-footer">
+    		  <div class="footer-price">
+      			<span class="cart-footer-title">Total:</span>
+      			<span class="cart-footer-total-wrapper">$<span class="cart-footer-total">0</span></span>
+    			</div>
+    			<div class="footer-close">
+      			<!--<p class="cart-close"><a data-popup-close="popup-1" href="#">Close</a></p>-->
+      			<button class="cart-close" type="button" data-popup-close="popup-1">Back</button>
+      			<a class="popup-close" data-popup-close="popup-1" href="#"><i class="fas fa-times"></i></a>
+    			</div>
+    		</div>
+    	</div>
+    </div> 	
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
